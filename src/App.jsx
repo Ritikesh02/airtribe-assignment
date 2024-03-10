@@ -11,6 +11,7 @@ function App() {
   const [targetCard, setTargetCard] = useState({
     bid: "",
     cid: "",
+    
   });
 
   const addboardHandler = (name) => {
