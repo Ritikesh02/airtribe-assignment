@@ -1,59 +1,96 @@
-.custom-scroll::-webkit-scrollbar {
-  width: 8px;
-}
+/* App.css */
 
-.custom-scroll::-webkit-scrollbar-thumb {
-  border-radius: 50px;
-  border: 1px solid #ccc;
-  background-color: #fff;
-}
-
-.custom-scroll::-webkit-scrollbar-thumb:hover {
-  border: 1px solid gray;
-}
-body{
+body {
+  font-family: 'Arial', sans-serif;
   margin: 0;
+  padding: 0;
 }
+
 .app {
-  width: 100%;
-  height: 100vh;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
 }
-
-
 
 .app_boards_container {
-  flex: 1;
-  width: 100%;
-  height: 100%;
-  overflow-x: auto;
-  padding-top: 20px;
+  width: 80%;
 }
 
 .app_boards {
-  height: 100%;
-  width: fit-content;
-  padding: 10px 30px;
   display: flex;
-  gap: 30px;
+  justify-content: space-between;
+}
+
+.board {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  margin-right: 20px;
+}
+
+.board h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.card {
+  background-color: #f8f8f8;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 .app_boards_last {
-  flex-basis: 290px;
-  min-width: 290px;
+  width: 30%;
 }
 
 .app_boards_add-board {
-  background-color: #fff;
-  color: #000;
-  border-radius: 10px;
-  box-shadow: 1px 1px 0 1px rgba(0, 0, 0, 0.12);
-  width: 100%;
-  text-align: center;
-}
-.app_boards_add-board_edit {
-  background-color: #fff;
-  border-radius: 10px;
+  background-color: #4caf50;
+  color: #fff;
   padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.app_boards_add-board:hover {
+  background-color: #45a049;
+}
+
+.editable {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.editable_edit {
+  border: 2px solid #4caf50;
+  border-radius: 3px;
+  padding: 5px;
+  margin-right: 5px;
+  outline: none;
+}
+
+.editable_button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.editable_button:hover {
+  background-color: #45a049;
 }
